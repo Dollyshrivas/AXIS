@@ -1,6 +1,6 @@
 # AXIS — AI Device Assistant 🤖
 
-> An AI-powered device assistant designed to help users interact with their devices, automate everyday tasks, and create a smarter cross-device experience.
+> An AI-powered device assistant designed to help users interact with their devices, automate everyday tasks, and create a smarter cross-device experience with gesture screenshots and file sharing, voice and system access.
 
 ---
 
@@ -11,6 +11,8 @@
 Instead of manually performing repetitive tasks, users can communicate with AXIS using natural language and let the AI understand the request and assist with the required action.
 
 AXIS is designed as a foundation for building a future-ready personal AI assistant that can work across devices such as laptops and smartphones.
+
+Axis is designed for gesture screenshots, file sharing, and full system access.
 
 ---
 
@@ -23,6 +25,7 @@ AXIS is designed as a foundation for building a future-ready personal AI assista
 - 💻 **Device Assistance**
   - Designed to interact with device-level tasks.
   - Helps users perform everyday operations more efficiently.
+  - Accesses the full device and completes everyday tasks.
 
 - 🔄 **Cross-Device Concept**
   - Designed with laptop and mobile device integration in mind.
