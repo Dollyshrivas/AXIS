@@ -1,36 +1,22 @@
-
 import pyautogui
-import os
 from datetime import datetime
-
-# Screenshot storage
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 SCREENSHOT_FOLDER = BASE_DIR / "screenshots"
 
-os.makedirs(SCREENSHOT_FOLDER, exist_ok=True)
+SCREENSHOT_FOLDER.mkdir(parents=True, exist_ok=True)
 
 
 def capture_screenshot():
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filepath = SCREENSHOT_FOLDER / f"axis_screenshot_{timestamp}.png"
 
-    filename = f"axis_screenshot_{timestamp}.png"
+    # Capture the actual computer display only
+    image = pyautogui.screenshot()
+    image.save(filepath)
 
-    filepath = os.path.join(
-        SCREENSHOT_FOLDER,
-        filename
-    )
+    print(f"AXIS: Screen screenshot saved: {filepath}")
 
-    screenshot = pyautogui.screenshot()
-
-    screenshot.save(filepath)
-
-    print(f"AXIS: Screenshot captured: {filepath}")
-
-    return filepath
-
-
-if __name__ == "__main__":
-    capture_screenshot()
+    return str(filepath)
